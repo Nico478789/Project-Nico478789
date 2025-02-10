@@ -1,0 +1,28 @@
+@import url("../node_modules/bootstrap-icons/font/bootstrap-icons.css");
+@import "custom";
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $secondary;
+  height: 100%;
+}
+
+main {
+  background-color: $secondary;
+  padding-bottom: 100px;
+}
+
+.footer {
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.img-fluid {
+  max-width: 75px;
+  height: auto;
+}

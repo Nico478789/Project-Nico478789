@@ -1,0 +1,65 @@
+<h1 class="text-white text-center">Voir les trajets disponibles</h1>
+<div class="container mb-3">
+  <form class="row">
+    <div class="col-6 col-md-3">
+      <label for="origin" class="text-white form-label"
+        >D'où partez vous ?</label
+      >
+      <input type="text" class="form-control" id="origin" name="origin" />
+    </div>
+    <div class="col-6 col-md-3">
+      <label for="destination" class="text-white form-label"
+        >Où allez-vous ?</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="destination"
+        name="destination"
+      />
+    </div>
+    <div class="col-6 col-md-3">
+      <label for="trip_date" class="text-white form-label"
+        >A quelle date ?</label
+      >
+      <input type="date" class="form-control" id="trip_date" name="trip_date" />
+    </div>
+    <div class="col-6 col-md-3 text-center d-flex align-items-end">
+      <button class="btn btn-primary" name="search">
+        <i class="bi bi-taxi-front-fill"></i>
+        Voir les covoiturages
+      </button>
+    </div>
+  </form>
+</div>
+
+<!--End of form
+Cards display-->
+
+<div class="card m-3 text-center d-flex flex-row justify-content-around">
+  <div>
+    <h5>Mickey</h5>
+    <img
+      src="../../Pictures/Mickey.png"
+      class="img-fluid"
+      alt="Photo du conducteur"
+    />
+    <p>note</p>
+  </div>
+  <div class="d-flex flex-column justify-content-around">
+    <p>Origine + heure</p>
+    <p>destination</p>
+  </div>
+
+  <div class="d-flex flex-column justify-content-around">
+    <p>prix</p>
+    <p>places restantes</p>
+  </div>
+  <div class="d-flex flex-column justify-content-around">
+    <p>Voyage ecologique?</p>
+    <a href="#" class="btn btn-primary">Voir détail / Réserver</a>
+  </div>
+</div>
+<div id="cards"></div>
+
+<!--end cards display-->

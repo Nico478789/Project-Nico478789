@@ -1,0 +1,60 @@
+<h1 class="text-center text-white">mon compte</h1>
+<!--Information:
+- email
+- credit dispo
+-->
+<div class="text-center text-white mb-5"><p id="welcome"></p></div>
+<!--Formulaire, informations modifiables
+-->
+<div class="d-flex align-items-center">
+  <div class="m-3">
+    <img
+      src="../../Pictures/Mickey.png"
+      class="img-fluid"
+      alt="Photo de l'utilisateur"
+    />
+  </div>
+  <div class="container">
+    <form id="form_update">
+      <div class="text-white mb-3 d-flex flex-row justify-content-around">
+        <div><p>Souhaitez-vous être conducteur ?</p></div>
+        <div>
+          <input type="radio" id="oui" name="driver" value="HTML" />
+          <label for="oui">oui</label><br />
+          <input type="radio" id="non" name="driver" value="CSS" checked />
+          <label for="non">non</label><br />
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary" id="addACar">
+          <i class="bi bi-taxi-front-fill"></i>
+          Ajouter une voiture
+        </button>
+      </div>
+      <div class="mb-3">
+        <label for="phoneId" class="form-label text-white"
+          >Numéro de téléphone</label
+        >
+        <input type="text" class="form-control" id="phoneId" name="phoneName" />
+      </div>
+      <div class="mb-3">
+        <label for="photo" class="form-label text-white">Votre photo</label>
+        <input
+          type="file"
+          class="form-control"
+          id="photo"
+          name="photo"
+          accept="image/png, image/jpeg"
+        />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary" id="updateUser">
+          Enregistrer les modifications
+        </button>
+        <button type="submit" class="btn btn-danger">
+          Supprimer mon compte
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<h1 class="text-center text-white">Inscription</h1>
+
+<div class="container">
+  <form id="form_suscribe">
+    <div class="mb-3">
+      <label for="user_name" class="form-label text-white">Pseudo</label>
+      <input type="text" class="form-control" id="user_name" name="user_name" />
+      <div class="invalid-feedback">Pseudo requis</div>
+    </div>
+    <div class="mb-3">
+      <label for="EmailInput" class="form-label text-white"
+        >Adresse Email</label
+      >
+      <input type="email" class="form-control" id="EmailInput" name="Email" />
+      <div class="invalid-feedback">Email au mauvais format</div>
+    </div>
+    <div class="mb-3">
+      <label for="PasswordInput" class="form-label text-white"
+        >Mot de passe</label
+      >
+      <input
+        type="password"
+        class="form-control"
+        id="PasswordInput"
+        name="Password"
+      />
+      <div class="invalid-feedback">
+        Au minimum 8 caractères, 1 majuscule, 1 minuscule, 1 chiffre, 1
+        caractère spécial
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="PasswordCheck" class="form-label text-white"
+        >Verification mot de passe</label
+      >
+      <input
+        type="password"
+        class="form-control"
+        id="PasswordCheck"
+        name="PasswordCheck"
+      />
+      <div class="invalid-feedback">Répéter le mot de passe</div>
+    </div>
+
+    <div class="text-center">
+      <button type="button" class="btn btn-primary" id="btn_suscribe">
+        M'inscrire
+      </button>
+    </div>
+  </form>
+  <div class="text-center pt-3">
+    <a href="/signin">Vous avez déjà un compte ? connectez-vous ici !</a>
+  </div>
+</div>
